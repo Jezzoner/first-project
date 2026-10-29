@@ -12,3 +12,16 @@ func _ready() -> void:
 func _crear_nivel(numero_nivel: int):
 	_nivel_instanciado = niveles[numero_nivel - 1].instantiate()
 	add_child(_nivel_instanciado)
+	
+	var hijos := _nivel_instanciado.get_children()
+	for i in hijos.size():
+		if hijos[i].is_in_group("personajes"):
+			hijos[i].personaje_muerto.connect(_reiniciar_nivel)
+			break
+
+func _eliminar_nivel():
+	_nivel_instanciado.queue_free()
+	
+func _reiniciar_nivel():
+	_eliminar_nivel()
+	_crear_nivel.call_deferred(_nivel_actual)
