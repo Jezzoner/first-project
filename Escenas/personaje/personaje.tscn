@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://3u6uv7d7gixg"]
+
+[ext_resource type="Script" uid="uid://clgxfe2i1mj5i" path="res://Escenas/personaje/personaje.gd" id="1_g78av"]
+[ext_resource type="SpriteFrames" uid="uid://eghfokdxjma0" path="res://Escenas/personaje/sprite_frames_personaje.tres" id="1_u5lov"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(14, 16)
+
+[node name="Personaje" type="CharacterBody2D" unique_id=2130943998 node_paths=PackedStringArray("animacion")]
+script = ExtResource("1_g78av")
+animacion = NodePath("Animacion")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=96420296]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Animacion" type="AnimatedSprite2D" parent="." unique_id=867234300]
+sprite_frames = ExtResource("1_u5lov")
+animation = &"correr"
+frame_progress = 0.44558173

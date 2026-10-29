@@ -1,0 +1,77 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://eghfokdxjma0"]
+
+[ext_resource type="Texture2D" uid="uid://dikaop4nchj18" path="res://sprites/mago_spritesheet.png" id="1_p5nre"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmiov"]
+atlas = ExtResource("1_p5nre")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xngf2"]
+atlas = ExtResource("1_p5nre")
+region = Rect2(16, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kib03"]
+atlas = ExtResource("1_p5nre")
+region = Rect2(32, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gley"]
+atlas = ExtResource("1_p5nre")
+region = Rect2(48, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7b6go"]
+atlas = ExtResource("1_p5nre")
+region = Rect2(64, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lf51"]
+atlas = ExtResource("1_p5nre")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wipy4"]
+atlas = ExtResource("1_p5nre")
+region = Rect2(0, 20, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_037nx"]
+atlas = ExtResource("1_p5nre")
+region = Rect2(16, 20, 16, 20)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pmiov")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xngf2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kib03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gley")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7b6go")
+}],
+"loop": 1,
+"name": &"correr",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5lf51")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wipy4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_037nx")
+}],
+"loop": 1,
+"name": &"saltar",
+"speed": 20.0
+}]
