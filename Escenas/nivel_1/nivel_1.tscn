@@ -2,6 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://cm3coktiocmao" path="res://tile_sets/mazmorra.tres" id="1_w02sk"]
 [ext_resource type="PackedScene" uid="uid://blp61v1wjciel" path="res://Escenas/bordes/bordes.tscn" id="2_h0ibw"]
+[ext_resource type="PackedScene" uid="uid://cnmajarva4sgr" path="res://Escenas/trampas/trampa.tscn" id="3_4f3do"]
 [ext_resource type="PackedScene" uid="uid://3u6uv7d7gixg" path="res://Escenas/personaje/personaje.tscn" id="3_h0ibw"]
 
 [node name="Nivel1" type="Node2D" unique_id=1849944880]
@@ -16,6 +17,9 @@ tile_map_data = PackedByteArray("AAD3/wYAAAAAAAAAAAD3/wUAAAAAAAAAAAD4/wUAAAAAAAA
 tile_set = ExtResource("1_w02sk")
 
 [node name="Bordes" parent="." unique_id=988772134 instance=ExtResource("2_h0ibw")]
+
+[node name="Trampa" parent="." unique_id=1174252919 instance=ExtResource("3_4f3do")]
+position = Vector2(-136, 8)
 
 [node name="Personaje" parent="." unique_id=2130943998 instance=ExtResource("3_h0ibw")]
 position = Vector2(-180, 82)
