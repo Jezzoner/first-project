@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cw2ugl7gjbi1h"]
 
 [ext_resource type="Texture2D" uid="uid://47o35pl1b7ou" path="res://sprites/tileset_mazmorra.png" id="1_48f7c"]
+[ext_resource type="Script" uid="uid://bsixc23tive1e" path="res://Escenas/moneda/moneda.gd" id="1_rqm1n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u83y7"]
 atlas = ExtResource("1_48f7c")
@@ -9,7 +10,9 @@ region = Rect2(48, 48, 16, 16)
 [sub_resource type="CircleShape2D" id="CircleShape2D_u83y7"]
 radius = 7.0
 
-[node name="Moneda" type="Node2D" unique_id=830992934]
+[node name="Moneda" type="Node2D" unique_id=830992934 node_paths=PackedStringArray("area2d")]
+script = ExtResource("1_rqm1n")
+area2d = NodePath("Area2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2030468462]
 texture = SubResource("AtlasTexture_u83y7")
